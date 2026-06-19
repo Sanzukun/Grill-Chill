@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0f0f0f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Grill &amp; Chill</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- App Shell -->
+  <div id="app">
+
+    <!-- Top Header -->
+    <header id="app-header" class="app-header hidden">
+      <div class="header-inner">
+        <div class="header-brand">
+          <span class="brand-logo">🔥</span>
+          <div>
+            <div class="brand-name">Grill &amp; Chill</div>
+            <div class="brand-sub">Cafe on Street, Kulti</div>
+          </div>
+        </div>
+        <div class="header-actions">
+          <div id="header-wallet" class="header-wallet hidden">
+            <span class="wallet-icon">👛</span>
+            <span id="header-wallet-balance">₹0</span>
+          </div>
+          <div id="cart-badge-btn" class="cart-btn hidden" onclick="navigateTo('cart')">
+            <span>🛒</span>
+            <span id="cart-count-badge" class="cart-badge">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Container -->
+    <main id="page-container" class="page-container"></main>
+
+    <!-- Bottom Navigation -->
+    <nav id="bottom-nav" class="bottom-nav hidden">
+      <div class="nav-item active" data-page="home" onclick="navigateTo('home')">
+        <div class="nav-icon">🍽️</div>
+        <div class="nav-label">Menu</div>
+      </div>
+      <div class="nav-item" data-page="cart" onclick="navigateTo('cart')">
+        <div class="nav-icon">🛒</div>
+        <div class="nav-label">Cart</div>
+        <div id="nav-cart-dot" class="nav-dot hidden"></div>
+      </div>
+      <div class="nav-item" data-page="orders" onclick="navigateTo('orders')">
+        <div class="nav-icon">📋</div>
+        <div class="nav-label">Orders</div>
+      </div>
+      <div class="nav-item" data-page="wallet" onclick="navigateTo('wallet')">
+        <div class="nav-icon">👛</div>
+        <div class="nav-label">Wallet</div>
+      </div>
+      <div class="nav-item" data-page="profile" onclick="navigateTo('profile')">
+        <div class="nav-icon">👤</div>
+        <div class="nav-label">Profile</div>
+      </div>
+    </nav>
+
+  </div><!-- /#app -->
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <!-- Full-screen Loader -->
+  <div id="global-loader" class="global-loader">
+    <div class="loader-content">
+      <div class="loader-flame">🔥</div>
+      <div class="loader-text">Grill &amp; Chill</div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="pages/auth.js"></script>
+  <script src="pages/home.js"></script>
+  <script src="pages/cart.js"></script>
+  <script src="pages/orders.js"></script>
+  <script src="pages/wallet.js"></script>
+  <script src="pages/profile.js"></script>
+  <script src="pages/owner.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>

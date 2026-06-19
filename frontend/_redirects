@@ -1,0 +1,4 @@
+/* Cloudflare Pages SPA routing — all routes serve index.html */
+/*  Except /owner which is a hash route handled by app.js     */
+/owner /index.html 200
+/* /api/* is your Railway backend — handled by frontend JS */

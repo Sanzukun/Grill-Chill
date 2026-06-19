@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Env files
+.env
+backend/.env
+frontend/.env
+
+# OS files
+.DS_Store
+
+# Node (if later used)
+node_modules/
+
+# Build files
+dist/
+build/
+
+backend/.env
+
+.env.example
