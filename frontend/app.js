@@ -4,7 +4,7 @@
 // ============================================================
 
 // Set your deployed backend URL here (or via build-time replacement)
-window.API_BASE = "https://grill-and-chill-production.up.railway.app";  // ← Change this
+window.API_BASE = "https://api.grillchill.in";  // ← Change this
 
 // ============================================================
 // API Client
